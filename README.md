@@ -46,5 +46,5 @@ zone "semerut11.pw" {
 ```
 nameserver 10.151.77.138     #IP MALANG
 ```
-- Lakukan ping domain semerut11.pw dengan melakukan perintah berikut pada client GRESIK dan SIDOARJO ```ping semerut11.pw```
+- Ping domain semerut11.pw dengan melakukan command: ```ping semerut11.pw```, pada client GRESIK dan SIDOARJO
 </br></br></br>
