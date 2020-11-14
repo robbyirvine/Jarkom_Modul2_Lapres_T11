@@ -29,31 +29,24 @@
 
 <a name="1"></a>
 ## SOAL NO 1
-### membuat sebuah website utama dengan alamat http://semerut11.pw yang memiliki
-- Buka MALANG dan update package lists dengan menjalankan command: ```apt-get update```
-- Install aplikasi bind9 pada MALANG ```apt-get install bind9 -y```
-- Pada MALANG lakukan perintah ```nano /etc/bind/named.conf.local```
-- Konfigurasi domain semerub12.pw berisi:
+### Membuat website utama dengan alamat http://semerut11.pw
+- Buka UML MALANG dan jalankan command: ```apt-get update```
+- Lalu install aplikasi bind9 dengan command: ```apt-get install bind9 -y```
+- Lalu ketik command:```nano /etc/bind/named.conf.local```
+- Lalu bisa mengkonfigurasi domain semerut11.pw sebagai berikut:
 ```
-zone "semerub12.pw" {
+zone "semerut11.pw" {
 	type master;
-	file "/etc/bind/jarkom/semerub12.pw";
+	file "/etc/bind/jarkom/semerut11.pw";
 };
 ```
-
-- ![testestes](/ss/1-1.png)
-   
-- Buat folder ```jarkom``` pada directory ```/etc/bind``` : ```mkdir /etc/bind/jarkom```
-- Salin file ```db.local``` pada ```/etc/bind``` ke dalam  folder jarkom dengan perintah: ```cp /etc/bind/db.local /etc/bind/jarkom/semerub12.pw```
-- Buka dan edit file semerub12.pw dengan perintah ```nano /etc/bind/jarkom/semerub12.pw```
-    ![testestes](/ss/1-2.png)
-    
-- Kemudian restart bind9 dengan perintah ```service bind9 restart```
-- Pada client GRESIK dan SIDOARJO arahkan nameserver menuju IP MALANG dengan mengedit file resolve.conf dengan perintah ```nano /etc/resolv.conf```
+- Buat folder ```jarkom``` pada directory ```/etc/bind``` , dengan command: ```mkdir /etc/bind/jarkom```
+- Salin file ```db.local``` pada ```/etc/bind``` ke dalam  folder jarkom dengan command: ```cp /etc/bind/db.local /etc/bind/jarkom/semerut11.pw```
+- Edit file tersebut dengan command: ```nano /etc/bind/jarkom/semerut11.pw```
+- Kemudian restart bind9: ```service bind9 restart```
+- Pada client GRESIK dan SIDOARJO arahkan nameserver menuju IP MALANG dengan mengedit file ```resolve.conf``` dengan command: ```nano /etc/resolv.conf```
 ```
-nameserver 10.151.71.162     #IP MALANG
+nameserver 10.151.77.138     #IP MALANG
 ```
-- ![testestes](/ss/1-3.png)
-    
-- Untuk mencoba koneksi DNS, lakukan ping domain semerub12.pw dengan melakukan perintah berikut pada client GRESIK dan SIDOARJO ```ping semerub12.pw```
+- Lakukan ping domain semerut11.pw dengan melakukan perintah berikut pada client GRESIK dan SIDOARJO ```ping semerut11.pw```
 </br></br></br>
