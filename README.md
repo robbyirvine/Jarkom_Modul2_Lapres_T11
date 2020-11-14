@@ -7,7 +7,7 @@
 ### Soal DNS
 - [No. 1](#1)
 - [No. 2](#2)
-</br></br></br>
+</br></br>
 
 <a name="1"></a>
 ## No. 1
@@ -34,7 +34,7 @@ nameserver 10.151.77.138     #IP MALANG
 
 INSERT PICTURE (1d/c)
 
-</br></br></br>
+</br></br>
 
 <a name="2"></a>
 ## No. 2
