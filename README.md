@@ -47,4 +47,15 @@ zone "semerut11.pw" {
 nameserver 10.151.77.138     #IP MALANG
 ```
 - Ping domain semerut11.pw dengan melakukan command: ```ping semerut11.pw```, pada client GRESIK dan SIDOARJO
+
+INSERT PICTURE (1d/c)
+
 </br></br></br>
+
+<a name="2"></a>
+## No. 2
+### Membuat alias http://semerut11.pw
+- Pada UML MALANG, konfigurasi file ```semerut11.pw``` dengan command: ```nano /etc/bind/jarkom/semerub12.pw```
+
+INSERT PICTURE (2a) 
+
