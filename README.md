@@ -26,7 +26,7 @@
   </br></br></br>
 
 <a name="1"></a>
-## SOAL NO 1
+## No. 1
 ### Membuat website utama dengan alamat http://semerut11.pw
 - Buka UML MALANG dan jalankan command: ```apt-get update```
 - Lalu install aplikasi bind9 dengan command: ```apt-get install bind9 -y```
