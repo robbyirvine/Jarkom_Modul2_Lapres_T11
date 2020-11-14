@@ -2,9 +2,8 @@
 
 1. 05311840000007 - I Gde Made Bhaskara Jala Dhananjaya
 2. 05311840000023 - Robby Irvine Surya
+</br></br></br>
 
-
-## Daftar Isi
 ### DNS
   1. [Nomor 1](#1)
   2. [Nomor 2](#2)
@@ -25,7 +24,6 @@
   16. [Nomor 16](#16)
   17. [Nomor 17](#17)
   </br></br></br>
-
 
 <a name="1"></a>
 ## SOAL NO 1
