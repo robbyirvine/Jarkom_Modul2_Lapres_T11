@@ -10,24 +10,24 @@ Departemen  :   Teknologi Informasi
 
 ## Pendahuluan
 - Kami melakukan konfigurasi terhadapt file `topologi.sh` pada puTTy dan menambahkan server **PROBOLINGGO**, sebelum masuk lebih jauh ke soal.
-![](ini gambar putty)
+![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/topologi.sh.png)
 - Server **PROBOLINGGO** juga ditambahkan ke file `bye.sh`
-![](ini gambar bye.sh)
-- UML Surabaya menjadi router sesuai dengan Modul sebelumnya, IP Forwarding diaktifkan dengan command `/etc/sysctl.conf` dan `sysctl -p` untuk megantifkannya.
-!{}(ini nanonya)
+![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/bye.sh.png)
+- UML Surabaya menjadi router sesuai dengan Modul sebelumnya, IP Forwarding diaktifkan dengan command `/etc/sysctl.conf` dan `sysctl -p` untuk mengaktifkannya.
+!{}(https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/SBY%202.png)
 - Kemudian, IP setiap UML disetting dalam file `/etc/network/interfaces` dengan keterangan sebagai berikut :
 ### SURABAYA sebagai Router
-![](ini suarabaya)
+![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/SBY%201.png)
 ### MALANG sebagai DNS Master Server
-![](ini malang)
+![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/MLG%201.png)
 ### MOJOKERTO sebagai DNS Salve Server
-![](ini mojokert)
+![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/MJRT%201.png)
 ### PROBOLINGGO sebagai Web Server
-![](ini probo)
+![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/PRB%201.png)
 ### GRESIK sebagai Client
-![](ini gresik)
+![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/GRS%201.png)
 ### SIDOARJO sebagai Client
-![](ini sido)
+![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/SDJ%201.png)
 
 - Kemudan seluruh IP diaktifkan dengan command `service networking restart`. Jalankan command `iptables –t nat –A POSTROUTING –o eth0 –j MASQUERADE –s 192.168.0.0/16` pada Router **SURABAYA** dengan tujuan agar dapat terkoneksi ke internet. Kemudian, masukan command di bawah ini untuk mengexport proxy pada UML :
 ```
