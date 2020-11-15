@@ -1,8 +1,11 @@
 # Jarkom_Modul2_Lapres_T11
-
-1. 05311840000007 - I Gde Made Bhaskara Jala Dhananjaya
-2. 05311840000023 - Robby Irvine Surya
-</br></br></br>
+Repositori sebagai Laporan Resmi Soal Praktikum Modul 2 Praktikum Komunikasi Data dan Jaringan Komputer 2020\
+Disusun oleh :
+```
+Kelompok    :   T11
+Anggota     :   I Gde Made Bhaskara Jala Dhananjaya (05311840000007)
+                Robby Irvine Surya                  (05311840000023)
+Departemen  :   Teknologi Informasi
 
 ### Soal DNS
 - [No. 1](#1)
