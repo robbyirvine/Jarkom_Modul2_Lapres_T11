@@ -46,7 +46,7 @@ export ftp_proxy="http://DPTSI-562455-7f4b5:e04f1@proxy.its.ac.id:8080"
 </br></br></br>
 
 <a name="1"></a>
-## No. 1
+## No. 1 
 ### Membuat website utama dengan alamat http://semerut11.pw
 - Buka UML **MALANG**, kemudian jalankan command `apt-get update`.
 - Kemudian install aplikasi bind9 dengan command `apt-get install bind9 -y`.
@@ -62,8 +62,7 @@ zone "semerut11.pw" {
 - Kemudian. buat folder `jarkom` pada directory `/etc/bind` , dengan command `mkdir /etc/bind/jarkom`.
 - Lalu, salin file `db.local` pada `/etc/bind` ke dalam  folder jarkom dengan command `cp /etc/bind/db.local /etc/bind/jarkom/semerut11.pw`.
 - Kemudian, edit file tersebut dengan command: `nano /etc/bind/jarkom/semerut11.pw`. Dengan rincian sebagai berikut :
-![https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/1B.png
-]
+![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/1B.png)
 - Kemudian restart bind9  ```service bind9 restart```
 - Pada client GRESIK dan SIDOARJO arahkan nameserver menuju IP MALANG dengan mengedit file ```resolve.conf``` dengan command: ```nano /etc/resolv.conf```
 ```
@@ -81,7 +80,11 @@ nameserver 10.151.77.138     #IP MALANG
 <a name="2"></a>
 ## No. 2
 ### Membuat alias http://semerut11.pw
-- Pada UML MALANG, konfigurasi file ```semerut11.pw``` dengan command: ```nano /etc/bind/jarkom/semerub12.pw```
+- Pada UML MALANG, konfigurasi file `semerut11.pw` dengan command: `nano /etc/bind/jarkom/semerub12.pw`.
+![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/2A.png)
 
-INSERT PICTURE (2a) 
+### Dokumentasi Hasil
+![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/Erorrr.png)
+
+### Kami sudah mengalami eror ini selama 4 hari, dan sudah mencoba selalu namun tidak bisa diatasi
 
