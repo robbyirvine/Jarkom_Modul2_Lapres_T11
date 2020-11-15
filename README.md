@@ -9,7 +9,7 @@ Departemen  :   Teknologi Informasi
 ```
 
 ## Pendahuluan
-- Kami melakukan konfigurasi terhadapt file `topologi.sh` pada puTTy dan menambahkan server **PROBOLINGGO**, sebelum masuk lebih jauh ke soal.
+- Kami melakukan konfigurasi terhadap file `topologi.sh` pada puTTy dan menambahkan server **PROBOLINGGO**, sebelum masuk lebih jauh ke soal.
 ![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/topologi.sh.png)
 - Server **PROBOLINGGO** juga ditambahkan ke file `bye.sh`. \
 ![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/bye.sh.png)
@@ -50,7 +50,7 @@ export ftp_proxy="http://DPTSI-562455-7f4b5:e04f1@proxy.its.ac.id:8080"
 ### Membuat website utama dengan alamat http://semerut11.pw
 - Buka UML **MALANG**, kemudian jalankan command `apt-get update`.
 - Kemudian install aplikasi bind9 dengan command `apt-get install bind9 -y`.
-- Kemduian, ketik command `nano /etc/bind/named.conf.local` kemudian lakukan konfigurasi domain semerut11.pw sebagai berikut:
+- Kemudian, ketik command `nano /etc/bind/named.conf.local` kemudian lakukan konfigurasi domain semerut11.pw sebagai berikut:
 ```
 zone "semerut11.pw" {
 	type master;
