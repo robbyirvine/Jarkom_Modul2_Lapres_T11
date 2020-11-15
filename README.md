@@ -11,10 +11,10 @@ Departemen  :   Teknologi Informasi
 ## Pendahuluan
 - Kami melakukan konfigurasi terhadapt file `topologi.sh` pada puTTy dan menambahkan server **PROBOLINGGO**, sebelum masuk lebih jauh ke soal.
 ![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/topologi.sh.png)
-- Server **PROBOLINGGO** juga ditambahkan ke file `bye.sh`.
+- Server **PROBOLINGGO** juga ditambahkan ke file `bye.sh`. \
 ![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/bye.sh.png)
 - UML Surabaya menjadi router sesuai dengan Modul sebelumnya, IP Forwarding diaktifkan dengan command `/etc/sysctl.conf` dan `sysctl -p` untuk mengaktifkannya.
-![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/SBY%202.png)
+![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/SBY%202.png) \
 - Kemudian, IP setiap UML disetting dalam file `/etc/network/interfaces` dengan keterangan sebagai berikut :
 ### SURABAYA sebagai Router
 ![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/SBY%201.png)
