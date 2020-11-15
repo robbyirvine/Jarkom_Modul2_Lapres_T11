@@ -48,27 +48,33 @@ export ftp_proxy="http://DPTSI-562455-7f4b5:e04f1@proxy.its.ac.id:8080"
 <a name="1"></a>
 ## No. 1
 ### Membuat website utama dengan alamat http://semerut11.pw
-- Buka UML MALANG dan jalankan command: ```apt-get update```
-- Lalu install aplikasi bind9 dengan command: ```apt-get install bind9 -y```
-- Lalu ketik command:```nano /etc/bind/named.conf.local```
-- Lalu bisa mengkonfigurasi domain semerut11.pw sebagai berikut:
+- Buka UML **MALANG**, kemudian jalankan command `apt-get update`.
+- Kemudian install aplikasi bind9 dengan command `apt-get install bind9 -y`.
+- Kemduian, ketik command `nano /etc/bind/named.conf.local` kemudian lakukan konfigurasi domain semerut11.pw sebagai berikut:
 ```
 zone "semerut11.pw" {
 	type master;
 	file "/etc/bind/jarkom/semerut11.pw";
 };
 ```
-- Buat folder ```jarkom``` pada directory ```/etc/bind``` , dengan command: ```mkdir /etc/bind/jarkom```
-- Salin file ```db.local``` pada ```/etc/bind``` ke dalam  folder jarkom dengan command: ```cp /etc/bind/db.local /etc/bind/jarkom/semerut11.pw```
-- Edit file tersebut dengan command: ```nano /etc/bind/jarkom/semerut11.pw```
-- Kemudian restart bind9: ```service bind9 restart```
+![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/1A.png)
+
+- Kemudian. buat folder `jarkom` pada directory `/etc/bind` , dengan command `mkdir /etc/bind/jarkom`.
+- Lalu, salin file `db.local` pada `/etc/bind` ke dalam  folder jarkom dengan command `cp /etc/bind/db.local /etc/bind/jarkom/semerut11.pw`.
+- Kemudian, edit file tersebut dengan command: `nano /etc/bind/jarkom/semerut11.pw`. Dengan rincian sebagai berikut :
+![https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/1B.png
+]
+- Kemudian restart bind9  ```service bind9 restart```
 - Pada client GRESIK dan SIDOARJO arahkan nameserver menuju IP MALANG dengan mengedit file ```resolve.conf``` dengan command: ```nano /etc/resolv.conf```
 ```
 nameserver 10.151.77.138     #IP MALANG
 ```
-- Ping domain semerut11.pw dengan melakukan command: ```ping semerut11.pw```, pada client GRESIK dan SIDOARJO
+![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/1C.png)
 
-INSERT PICTURE (1d/c)
+- Ping domain semerut11.pw dengan melakukan command: `ping semerut11.pw`, pada client **GRESIK** dan **SIDOARJO**.
+### Dokumentasi Hasil
+![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/1D.png)
+![](https://github.com/robbyirvine/Jarkom_Modul2_Lapres_T11/blob/main/UML/1E.png)
 
 </br></br></br>
 
