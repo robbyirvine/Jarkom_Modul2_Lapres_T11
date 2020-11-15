@@ -6,6 +6,7 @@ Kelompok    :   T11
 Anggota     :   I Gde Made Bhaskara Jala Dhananjaya (05311840000007)
                 Robby Irvine Surya                  (05311840000023)
 Departemen  :   Teknologi Informasi
+'''
 
 ### Soal DNS
 - [No. 1](#1)
