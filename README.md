@@ -6,7 +6,39 @@ Kelompok    :   T11
 Anggota     :   I Gde Made Bhaskara Jala Dhananjaya (05311840000007)
                 Robby Irvine Surya                  (05311840000023)
 Departemen  :   Teknologi Informasi
-'''
+```
+
+## Pendahuluan
+- Kami melakukan konfigurasi terhadapt file `topologi.sh` pada puTTy dan menambahkan server **PROBOLINGGO**, sebelum masuk lebih jauh ke soal.
+![](ini gambar putty)
+- Server **PROBOLINGGO** juga ditambahkan ke file `bye.sh`
+![](ini gambar bye.sh)
+- UML Surabaya menjadi router sesuai dengan Modul sebelumnya, IP Forwarding diaktifkan dengan command `/etc/sysctl.conf` dan `sysctl -p` untuk megantifkannya.
+!{}(ini nanonya)
+- Kemudian, IP setiap UML disetting dalam file `/etc/network/interfaces` dengan keterangan sebagai berikut :
+### SURABAYA sebagai Router
+![](ini suarabaya)
+### MALANG sebagai DNS Master Server
+![](ini malang)
+### MOJOKERTO sebagai DNS Salve Server
+![](ini mojokert)
+### PROBOLINGGO sebagai Web Server
+![](ini probo)
+### GRESIK sebagai Client
+![](ini gresik)
+### SIDOARJO sebagai Client
+![](ini sido)
+
+- Kemudan seluruh IP diaktifkan dengan command `service networking restart`. Jalankan command `iptables –t nat –A POSTROUTING –o eth0 –j MASQUERADE –s 192.168.0.0/16` pada Router **SURABAYA** dengan tujuan agar dapat terkoneksi ke internet. Kemudian, masukan command di bawah ini untuk mengexport proxy pada UML :
+```
+export http_proxy="http://DPTSI-562455-7f4b5:e04f1@proxy.its.ac.id:8080"
+export https_proxy="http://DPTSI-562455-7f4b5:e04f1@proxy.its.ac.id:8080"
+export ftp_proxy="http://DPTSI-562455-7f4b5:e04f1@proxy.its.ac.id:8080"
+```
+- Kemudian, pada server **MALANG** dan **MOJOKERTO**, install aplikasi **bind9** dengan command :
+`apt-get install bind9 -y`
+- Terakhir, pada server **PROBOLINGGO**, install aplikasi apache2 dengan command :
+`apt-get install apache2 -y`
 
 ### Soal DNS
 - [No. 1](#1)
